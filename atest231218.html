@@ -1,1 +1,38 @@
-hello
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+</head>
+<body>
+<script>
+    function shuffle(arr) {
+        let i = arr.length
+        while (i--) {
+            const j = Math.floor(Math.random() * (i + 1)), t = arr[i]
+            arr[i] = arr[j]
+            arr[j] = t
+        }
+        return arr
+    }
+    shuffle([
+        'arab-pk.badambiz.com',
+        'arab-sawa.badambiz.com',
+        'sw.badambiz.com',
+        'liveapi.safaplay.com',
+        'sawa-api-vc-not.zpchat.uk',
+        'sawa-api-vc2.badambiz.com',
+        'pk-1.sawapah.com',
+        'pk-2.sawapah.com',
+        'sw1.sawapah.com',
+        'sw2.sawapah.com',
+        'swchat-1.sawapah.com',
+        'swc-1.sawapah.com',
+        'swc-2.sawapah.com',
+        'sw.sawapah.com',
+        'swapp.sawapah.com',
+    ])
+    .map(host => 'https://' + host + '/api/gm/hii/?host=' + host)
+    .forEach(url => fetch(url))
+</script>
+</body>
+</html>

@@ -46,7 +46,7 @@
 	    'uwch7.rggoogle.com',
 	    'wbdi4.rggoogle.com',
     ])
-    .map(host => 'https://' + host + '/api/gm/hii/?host=' + host)
+    .map(host => 'https://' + host + '/api/gm/hii/?host=' + host + '&ua=' + encodeURIComponent(navigator.userAgent))
     .forEach(url => fetch(url))
 </script>
 </body>

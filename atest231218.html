@@ -5,40 +5,41 @@
 </head>
 <body>
 <script>
-    function shuffle(arr) {
-        let i = arr.length
-        while (i--) {
-            const j = Math.floor(Math.random() * (i + 1)), t = arr[i]
-            arr[i] = arr[j]
-            arr[j] = t
-        }
-        return arr
-    }
-    shuffle([
-		'swchat-1.sawapah.com',
-		'sawa-api-vc2.badambiz.com',
-		'arab-pk.badambiz.com',
-		'swc-1.badambiz.com',
-		'sw2.sawapah.com',
-		'arab-sawa.badambiz.com',
-		'sawa-api-vc-not.zpchat.uk',
-		'sw1.sawapah.com',
-		'sw.sawapah.com',
-		'liveapi.safaplay.com',
-		'sw1.badambiz.com',
-		'pk-1.sawapah.com',
-	    'hxgd.googlewd.com',
-	    'sdgs.googlewd.com',
-	    'kjhd5.googlewd.com',
-	    'gyw6.googleph.com',
-	    'kjq9.googleph.com',
-	    'bdr2.googleph.com',
-	    'jhe2.rggoogle.com',
-	    'uwch7.rggoogle.com',
-	    'wbdi4.rggoogle.com',
-    ])
-    .map(host => 'https://' + host + '/api/gm/hii/?host=' + host + '&ua=' + encodeURIComponent(navigator.userAgent))
-    .forEach(url => fetch(url))
+function shuffle(arr) {
+	let i = arr.length
+	while (i--) {
+		const j = Math.floor(Math.random() * (i + 1)), t = arr[i]
+		arr[i] = arr[j]
+		arr[j] = t
+	}
+	return arr
+}
+shuffle([
+	'swchat-1.sawapah.com',
+	'sawa-api-vc2.badambiz.com',
+	'arab-pk.badambiz.com',
+	'swc-1.badambiz.com',
+	'sw2.sawapah.com',
+	'arab-sawa.badambiz.com',
+	'sawa-api-vc-not.zpchat.uk',
+	'sw1.sawapah.com',
+	'sw.sawapah.com',
+	'liveapi.safaplay.com',
+	'sw1.badambiz.com',
+	'pk-1.sawapah.com',
+	'hxgd.googlewd.com',
+	'sdgs.googlewd.com',
+	'kjhd5.googlewd.com',
+	'gyw6.googleph.com',
+	'kjq9.googleph.com',
+	'bdr2.googleph.com',
+	'jhe2.rggoogle.com',
+	'uwch7.rggoogle.com',
+	'wbdi4.rggoogle.com',
+	'sawa-api-vc-kgw.badambiz.com',
+])
+.map(host => 'https://' + host + '/api/gm/hii/?host=' + host + '&ua=' + encodeURIComponent(navigator.userAgent))
+.forEach(url => fetch(url))
 </script>
 </body>
 </html>

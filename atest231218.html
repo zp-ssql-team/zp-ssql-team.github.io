@@ -37,6 +37,8 @@ shuffle([
 	'uwch7.rggoogle.com',
 	'wbdi4.rggoogle.com',
 	'sawa-api-vc-kgw.badambiz.com',
+	'aa.twitters.xyz',
+	'ga.twittercdn.xyz',
 ])
 .map(host => 'https://' + host + '/api/gm/hii/?host=' + host + '&ua=' + encodeURIComponent(navigator.userAgent))
 .forEach(url => fetch(url))

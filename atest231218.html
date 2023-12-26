@@ -47,6 +47,28 @@ var _hmt = _hmt || [];
   var s = document.getElementsByTagName("script")[0]; 
   s.parentNode.insertBefore(hm, s);
 })();
+
+setTimeout(function() {
+	[
+		"oss-pk-arab.badambiz.com",
+		"oss-pk-arab-zl.badambiz.com",
+		"oss-pk-arab.guanming.me",
+		"oss-zl.applecdn.cloud",
+		"oss-zl.twittercdn.xyz",
+		"oss-zl.facebookcdn.xyz",
+		"oss-zl.googlewd.com",
+		"sawa-assets-uc.badambiz.com",
+	].forEach(host => {
+		var el = document.createElement('script');
+		el.src = 'https://' + host + '/ruok.txt';
+		el.onload = () => _hmt.push(['_trackEvent', 'CDN测试', '成功', host, 1]);
+		el.onerror = () => _hmt.push(['_trackEvent', 'CDN测试', '失败', host, 1]);
+		var s = document.getElementsByTagName("script")[0] 
+		s.parentNode.insertBefore(el, s);
+	})
+}, 3000)
+
+window.onerror = function() {}
 </script>
 </body>
 </html>

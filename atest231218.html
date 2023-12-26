@@ -40,6 +40,13 @@ shuffle([
 ])
 .map(host => 'https://' + host + '/api/gm/hii/?host=' + host + '&ua=' + encodeURIComponent(navigator.userAgent))
 .forEach(url => fetch(url))
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?30884aa722abb0ab04c0ac4cfc9644e4";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
 </script>
 </body>
 </html>

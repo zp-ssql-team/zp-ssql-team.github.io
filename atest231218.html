@@ -15,18 +15,19 @@ function shuffle(arr) {
 	return arr
 }
 shuffle([
-	'swchat-1.sawapah.com',
-	'sawa-api-vc2.badambiz.com',
-	'arab-pk.badambiz.com',
-	'swc-1.badambiz.com',
-	'sw2.sawapah.com',
-	'arab-sawa.badambiz.com',
-	'sawa-api-vc-not.zpchat.uk',
-	'sw1.sawapah.com',
-	'sw.sawapah.com',
-	'liveapi.safaplay.com',
-	'sw1.badambiz.com',
-	'pk-1.sawapah.com',
+	//'swchat-1.sawapah.com',
+	//'sawa-api-vc2.badambiz.com',
+	//'arab-pk.badambiz.com',
+	//'swc-1.badambiz.com',
+	//'sw2.sawapah.com',
+	//'arab-sawa.badambiz.com',
+	//'sawa-api-vc-not.zpchat.uk',
+	//'sw1.sawapah.com',
+	//'sw.sawapah.com',
+	//'liveapi.safaplay.com',
+	//'sw1.badambiz.com',
+	//'pk-1.sawapah.com',
+	//'sawa-api-vc-kgw.badambiz.com',
 	'hxgd.googlewd.com',
 	'sdgs.googlewd.com',
 	'kjhd5.googlewd.com',
@@ -36,11 +37,10 @@ shuffle([
 	'jhe2.rggoogle.com',
 	'uwch7.rggoogle.com',
 	'wbdi4.rggoogle.com',
-	'sawa-api-vc-kgw.badambiz.com',
 	'aa.twitters.xyz',
 	'ga.twittercdn.xyz',
 ])
-.map(host => 'https://' + host + '/api/gm/hii/?host=' + host + '&ua=' + encodeURIComponent(navigator.userAgent))
+.map(host => 'https://' + host + '/api/gm/hii/?host=' + host// + '&ua=' + encodeURIComponent(navigator.userAgent))
 .forEach(url => fetch(url))
 var _hmt = _hmt || [];
 (function() {
@@ -50,6 +50,7 @@ var _hmt = _hmt || [];
   s.parentNode.insertBefore(hm, s);
 })();
 
+/*
 setTimeout(function() {
 	[
 		"oss-pk-arab.badambiz.com",
@@ -71,6 +72,7 @@ setTimeout(function() {
 }, 3000)
 
 window.onerror = function() {}
+*/
 </script>
 </body>
 </html>

@@ -40,7 +40,7 @@ shuffle([
 	'aa.twitters.xyz',
 	'ga.twittercdn.xyz',
 ])
-.map(host => 'https://' + host + '/api/gm/hii/?host=' + host// + '&ua=' + encodeURIComponent(navigator.userAgent))
+.map(host => 'https://' + host + '/api/gm/hii/?host=' + host) // + '&ua=' + encodeURIComponent(navigator.userAgent))
 .forEach(url => fetch(url))
 var _hmt = _hmt || [];
 (function() {

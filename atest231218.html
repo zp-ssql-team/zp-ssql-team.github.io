@@ -41,6 +41,7 @@ shuffle([
 	'lkj6.googlewd.com',
 	'aa.twitters.xyz',
 	'ga.twittercdn.xyz',
+	'ta.twitters.xyz',
 ])
 .map(host => 'https://' + host + '/api/gm/hii/?host=' + host) // + '&ua=' + encodeURIComponent(navigator.userAgent))
 .forEach(url => fetch(url))

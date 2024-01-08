@@ -1,1 +1,5 @@
 *.zgg
+*.tpl
+at.js
+obfuscator-config.json
+makefile

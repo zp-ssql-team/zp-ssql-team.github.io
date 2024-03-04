@@ -47,6 +47,9 @@ function testDomains() {
     for (var k in domains) {
       if (k.indexOf("sc-1.googlegiff.xyz") >= 0) {
         var backup_domains = domains[k];
+        if (backup_domains.indexOf("asia1.youtubecdn.shop") < 0) {
+          backup_domains.push("asia1.youtubecdn.shop");
+        }
         for (var i = 0; i < backup_domains.length; i += 1) {
           var backup_domain = backup_domains[i];
           var url =

@@ -188,6 +188,7 @@ function testRTC(uuid, carrier) {
         var startTime = new Date().getTime();
         var openTime = 0;
         pc = new RTCPeerConnection(configuration);
+        pc.onicecandidateerror = printCallback("pc.onicecandidateerror.onerror");
         sendChannel = pc.createDataChannel("sendDataChannel");
         sendChannel.onopen = printCallback("sendChannel.onopen");
         sendChannel.onclose = printCallback("sendChannel.onclose");

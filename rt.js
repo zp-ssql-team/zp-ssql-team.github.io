@@ -42,8 +42,14 @@ function testRTC(uuid, carrier) {
 
     function toStr(a) {
         try {
-            if (typeof(a) === 'object')
-                return JSON.stringify(a)
+            if (typeof(a) === 'object') {
+                var res = JSON.stringify(a)
+                if (a.errorCode)
+                    res += "; errorCode=" + a.errorCode
+                if (a.errorText)
+                    res += "; errorText=" + a.errorText
+                return res
+            }
         } catch (er) {}
         return "" + a
     }
